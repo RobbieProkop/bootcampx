@@ -16,5 +16,8 @@ CREATE TABLE students (
   cohort_id INTEGER REFERENCES  cohorts(id) ON DELETE CASCADE
   );
 
+-- \i seeds/cohorts.sql
+-- \i seeds/students.sql
 
+SELECT id, name, email, cohort_id FROM students ORDER BY cohort_id;
 
