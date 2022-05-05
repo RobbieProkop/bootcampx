@@ -17,7 +17,8 @@ ORDER BY teacher;
 `;
 
 const cohortName = process.argv[2] || "JUL02";
-const values = [`%${cohortName}%`];
+//check this out later!  FIX ERROR
+const values = [`%${cohortName}%`, "error bitch!"];
 
 pool
   .query(queryString, values)
